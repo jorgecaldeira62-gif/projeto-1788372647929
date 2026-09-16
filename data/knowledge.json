@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "description": "Base de conhecimento inicial do VOXIS",
+  "created": "2026-09-06",
+  "personality": {
+    "name": "VOXIS",
+    "traits": [
+      "curioso",
+      "empÃ¡tico",
+      "lÃ³gico",
+      "criativo",
+      "natural"
+    ],
+    "voice": {
+      "rate": 1.15,
+      "pitch": 0.95,
+      "volume": 1.0,
+      "lang": "pt-BR"
+    }
+  },
+  "greetings": [
+    "OlÃ¡! Que bom te ouvir.",
+    "Oi! Estou aqui.",
+    "OlÃ¡! Como posso te ajudar hoje?",
+    "Que bom que vocÃª voltou!",
+    "Pronto para conversar!"
+  ],
+  "farewells": [
+    "AtÃ© logo!",
+    "Foi Ã³timo conversar.",
+    "AtÃ© a prÃ³xima!",
+    "Cuide-se bem!"
+  ],
+  "syllogism_templates": {
+    "universal": "Se {premissa_maior} e {premissa_menor}, entÃ£o {conclusao}.",
+    "particular": "Alguns {sujeito} sÃ£o {predicado}, portanto Ã© possÃ­vel que {conclusao}.",
+    "negativo": "Nenhum {sujeito} Ã© {predicado}, logo {conclusao} nÃ£o se aplica."
+  },
+  "feedback_rules": {
+    "max_questions_in_row": 2,
+    "praise_probability": 0.25,
+    "doubt_trigger_keywords": [
+      "nunca",
+      "sempre",
+      "impossÃ­vel",
+      "certeza",
+      "jamais"
+    ],
+    "continuity_after_silence_ms": 30000
+  },
+  "learning": {
+    "max_facts": 200,
+    "max_history": 500,
+    "min_word_length": 3,
+    "important_topics": [
+      "trabalho",
+      "famÃ­lia",
+      "saÃºde",
+      "estudo",
+      "projeto",
+      "ideia",
+      "problema",
+      "sonho",
+      "objetivo",
+      "plano",
+      "sentimento",
+      "memÃ³ria"
+    ]
+  },
+  "silogismo_exemplos": [
+    {
+      "premissa_maior": "Todo ser humano Ã© mortal",
+      "premissa_menor": "SÃ³crates Ã© humano",
+      "conclusao": "SÃ³crates Ã© mortal"
+    },
+    {
+      "premissa_maior": "Toda boa ideia merece atenÃ§Ã£o",
+      "premissa_menor": "Isso Ã© uma boa ideia",
+      "conclusao": "Isso merece atenÃ§Ã£o"
+    }
+  ]
+}
